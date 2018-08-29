@@ -1,211 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="style.css">
-<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
- <link href="css/all.css" rel="stylesheet"> 
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
- -->
-<title>Skill-House</title>
 
-<style>
-      
-      body{
-      	margin: 0 0 0 0;
-        background: #D1F2EB;
-        padding: 0 0 0 0; 
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="css/all.css" rel="stylesheet"> 
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+     -->
+    <title>Skill-House</title>
+  </head>
+
+
+  <style>
+        
+    body{
+      margin: 0 0 0 0;
+      background: #D1F2EB;
+      padding: 0 0 0 0; 
+    }
+          
+
+    header{
+      background: rgba(0,0,0,0.1) ; 
+      display:flex;
+      flex-direction:row;
+      justify-content: space-between;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      left: 0;
+      font-size:20px;
+      font-family: 'Pacifico', cursive;
+      margin: 0 0 0 0;
+    }
+
+
+    header ul li{
+      margin: 0 25px;
+    }
+
+
+    header ul{
+      display:flex;
+      flex-direction:row;
+      list-style: none;
+      justify-content: space-between;
+      padding: 20px 0 0 0;
+    }
+
+          
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
       }
-      
-
-     header{
-
-      	 background: rgba(0,0,0,0.1) ; 
-         display:flex;
-         flex-direction:row;
-         justify-content: space-between;
-         position: fixed;
-         top: 0;
-         width: 100%;
-         left: 0;
-         font-size:20px;
-  
-         font-family: 'Pacifico', cursive;
-         margin: 0 0 0 0;
-
-      }
-
-header ul li{
-  margin: 0 25px;
-}
-
-      header ul{
-        display:flex;
-         flex-direction:row;
-         list-style: none;
-         justify-content: space-between;
-        padding: 20px 0 0 0;
-      }
-
-      
-
-  	  @media (max-width: 700px) {
-  
-  		header {
-    	flex-direction: column;
-  		}
 
       header ul {
         flex-direction: column;
       }
+    }
+
+          
+    .hero {
+      width: 100vw;
+      height: 100vh;
+      margin: 0 0 0 0;
+      padding: 0 0 0 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-family: 'Pacifico', cursive;
+      font-size: 20px;
+      background-image: url(img/skateboard.jpg);
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    	
+
+    .main{
+     	margin-top: 30px;
+      display:flex;
+      flex-direction:row;
+      justify-content: space-around;
+    }
 
 
-	}
+    main > div {
+      flex: 1;
+    }
 
-      
 
-      .hero {
-    /* Sizing */
-    width: 100vw;
-    height: 100vh;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-    
-    /* Flexbox stuff */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    /* Text styles */
-    text-align: center;
-    font-family: 'Pacifico', cursive;
-    font-size: 20px;
-    
-    /* Background styles */
-    background-image: url(img/skateboard.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-	
-
-.main{
- 		 margin-top: 30px;
-         display:flex;
-         flex-direction:row;
-         justify-content: space-around;
-  
-         
-         
-         
-
+    @media all and (max-width: 700px) {
+      .main {
+      	flex-direction: column;
       }
-
-      main > div {
-  		flex: 1;
-  	  }
-
-  	  @media all and (max-width: 700px) {
-  
-  		
-  
-  		.main {
-  			flex-direction: column;
-  		}
-
-  	}
-
-	.main1,.main2,.main3 {
-		text-align: center;
-		font-family: 'Pacifico', cursive;
-		font-size: 30px;
-	}
-
-  .main1 img,.main2 img,.main3 img {
-    border-radius: 25%;
-  }
-
-  .footer1 {
-		background: #117A65;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-    padding: 5px 0;
-    font-size: 40px;
+    }
 
 
-	}
-
-  .footer1 li {
-    padding: 20px;
-  }
-
-
-  .footer {
-    padding: 0;
-  }
-
-  ul {
-    list-style: none;
-  }
+    .main1,.main2,.main3 {
+    	text-align: center;
+    	font-family: 'Pacifico', cursive;
+    	font-size: 30px;
+    }
 
 
+    .main1 img,.main2 img,.main3 img {
+      border-radius: 25%;
+    }
 
-   </style>
-   
-   <body>
 
-      <header>
-        <h2>Skill-House</h2>
-        <ul>
-          <li>Home</li>
-          <li>Clubs</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-      </header>
+    .footer1 {
+    	background: #117A65;
+    	display: flex;
+    	flex-direction: row;
+    	justify-content: center;
+      padding: 5px 0;
+      font-size: 40px;
+    }
 
-      
-      <section class="hero">
-            <div class="hero-inner">
-                <h1>Home of all skills</h1>
-                <h2>where preperation meets opportunity...</h2>
-                <h2>Join Today</h2>
-            </div>
+
+    .footer1 li {
+      padding: 20px;
+    }
+
+
+    .footer {
+      padding: 0;
+    }
+
+
+    ul {
+      list-style: none;
+    }
+
+  </style>
+
+
+     
+  <body>
+    <header>
+      <h2>Skill-House</h2>
+      <ul>
+        <li>Home</li>
+        <li>Clubs</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </header>
+
+        
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>Home of all skills</h1>
+        <h2>where preperation meets opportunity...</h2>
+        <h2>Join Today</h2>
+      </div>
+    </section>
 
            
-        </section>
-         
-         <div class="main">
-         	<div class="main1">
-         		<img src="img/dancing.jpg" alt="image1">
-         		<p>Dancing</p>
-
-         	</div>
-         	<div class="main2">
-         		<img src="img/photographer.jpg" alt="image2">
-         		<p>Photography</p>
-         	</div>
-         	<div class="main3">
-         		<img src="img/drama.jpg" alt="image3">
-         		<p>Dramatics</p>
-         	</div>
-         </div>
-
-         <div class="footer">
-          <ul class="footer1">
-            <li><i class="fab fa-instagram"></i></li>
-            <li><i class="fab fa-facebook"></i></li>
-            <li><i class="fab fa-twitter-square"></i></li>
-            <li><i class="fa fa-envelope-square"></i></li>
-            <li><i class="fab fa-youtube"></i></li>
-          </ul>
-         </div>
-
-		
+    <div class="main">
+      <div class="main1">
+        <img src="img/dancing.jpg" alt="image1">
+        <p>Dancing</p>
+      </div>
+      <div class="main2">
+        <img src="img/photographer.jpg" alt="image2">
+        <p>Photography</p>
+      </div>
+      <div class="main3">
+        <img src="img/drama.jpg" alt="image3">
+        <p>Dramatics</p>
+      </div>
+    </div>
 
 
-   </body>
+    <div class="footer">
+      <ul class="footer1">
+        <li><i class="fab fa-instagram"></i></li>
+        <li><i class="fab fa-facebook"></i></li>
+        <li><i class="fab fa-twitter-square"></i></li>
+        <li><i class="fa fa-envelope-square"></i></li>
+        <li><i class="fab fa-youtube"></i></li>
+      </ul>
+    </div>
+
+  </body>
+
 </html>
